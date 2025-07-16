@@ -1,0 +1,18 @@
+🚧 Mejoras en el diseño de corredores
+- Creación simultánea de múltiples corredores: Ahora puedes generar varios corredores con sus respectivos alineamientos y subensamblajes en una sola operación.
+- Edición más rápida y precisa: Los movimientos en corredores grandes son hasta 80 veces más rápidos gracias a mejoras en el ajuste de objetos.
+🌄 Optimización de superficies
+- Nivel de detalle ajustable: Puedes reducir el nivel de detalle de superficies para mejorar el rendimiento en proyectos extensos.
+- Regeneración inteligente: Civil 3D evita recalcular superficies si no hay cambios geométricos, ahorrando tiempo.
+🔁 Automatización con Dynamo
+- Más de 1,100 nuevos nodos: Para trabajar con alineamientos, perfiles, redes de tuberías y más.
+- Gestión avanzada de paquetes: Un nuevo administrador facilita la instalación y personalización de scripts.
+🛣️ Diseño geométrico avanzado
+- Intersecciones y rotondas dinámicas: Se modelan según estándares y se integran fácilmente con vías existentes.
+- Simulación de conducción: Permite evaluar visualmente distancias de vista y geometría.
+🌐 Colaboración y compatibilidad
+- Bases de datos topográficas en la nube: Mejora la colaboración entre equipos de levantamiento.
+- Compatibilidad con .NET 8: Facilita el desarrollo de extensiones personalizadas.
+Si quieres ver todo esto en acción, te recomiendo este tutorial paso a paso en Civil 3D 2025 que cubre desde la creación de superficies hasta el diseño completo de un proyecto vial.
+
+
