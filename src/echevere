@@ -4,4 +4,8 @@
 👁️ Visualización y análisis
 - Mejores herramientas para simular trayectorias de vehículos, evaluar visibilidad y verificar cumplimiento de normas de seguridad vial.
 - Integración con InfraWorks para visualizar el entorno urbano y validar el diseño en contexto real.
+def calcular_area_perimetro():
+# Ejecución
+calcular_area_perimetro()
+
 

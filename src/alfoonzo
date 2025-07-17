@@ -15,4 +15,44 @@
 - Bases de datos topográficas en la nube: Mejora la colaboración entre equipos de levantamiento.
 - Compatibilidad con .NET 8: Facilita el desarrollo de extensiones personalizadas.
 Si quieres ver todo esto en acción, te recomiendo este tutorial paso a paso en Civil 3D 2025 que cubre desde la creación de superficies hasta el diseño completo de un proyecto vial.
+def calcular_area_perimetro():
+    import math
+
+    # Solicitar número de vértices
+    num_vertices = int(input("Ingresa el número de vértices del polígono: "))
+    
+    # Almacenar coordenadas
+    puntos = []
+    for i in range(num_vertices):
+        nombre = input(f"Ingresa el nombre del punto {i+1}: ")
+        norte = float(input(f"Ingrese la coordenada norte del punto {nombre}: "))
+        este = float(input(f"Ingrese la coordenada este del punto {nombre}: "))
+        puntos.append((nombre, norte, este))
+    
+    # Asegurar que el polígono sea cerrado (último punto igual al primero)
+    puntos.append(puntos[0])  # Cerrar el polígono
+    
+    # Cálculo del área usando la fórmula del "área con coordenadas"
+    area = 0
+    for i in range(num_vertices):
+        area += (puntos[i][1] * puntos[i+1][2] - puntos[i][2] * puntos[i+1][1])
+    area = abs(area) / 2
+
+    # Cálculo del perímetro
+    perimetro = 0
+    for i in range(num_vertices):
+        dx = puntos[i+1][1] - puntos[i][1]
+        dy = puntos[i+1][2] - puntos[i][2]
+        perimetro += math.sqrt(dx**2 + dy**2)
+    
+    # Mostrar resultados
+    print("\nLISTADO DE COORDENADAS:")
+    for punto in puntos[:-1]:  # Omitir el cierre duplicado
+        print(f"Nombre: {punto[0]}, Norte: {punto[1]}, Este: {punto[2]}")
+    
+    print(f"\nÁrea del polígono: {area:.2f}")
+    print(f"Perímetro del polígono: {perimetro:.2f}")
+
+# Ejecución
+calcular_area_perimetro()
 
